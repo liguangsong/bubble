@@ -1,0 +1,124 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    background: lightgray;
+}
+.bubble_teacher{
+    margin-top: 20px;
+    width: 0px;
+    height: 0px;
+    border-top: 20px solid white;
+    border-bottom: 20px solid transparent;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    float: left;
+    position: relative;
+    left: 5px;
+}
+.box_teacher{
+    margin-top: 20px;
+    padding: 10px;
+    width: 200px;
+    height: auto;
+    background: white;
+    border-radius: 10px;
+    float: left;
+    position: relative;
+    left: -40px;
+    top: -10px;
+}
+.outer_teacher{
+    margin: 20px;
+    display: block;
+    clear: right;
+}
+.avatar_teacher{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-image: url('../img/teacher.png');
+    float: left;
+    background-position: center;
+}
+.footer{
+    position: fixed;
+    height: 40px;
+    width: 100%;
+    bottom: 0px;
+}
+.choice{
+    width: 280px;
+    height: 30px;
+    background: white;
+    border-radius: 15px;
+    padding: 0px 10px;
+    vertical-align: sub;
+    float: left;
+    position: relative;
+    left: 10px;
+}
+.choice:hover{
+    width: 280px;
+    height: 30px;
+    background: yellowgreen;
+    border-radius: 15px;
+    padding: 0px 10px;
+    vertical-align: sub;
+    float: left;
+    position: relative;
+    left: 10px;
+}
+.bubble_student{
+    margin-top: 20px;
+    width: 0px;
+    height: 0px;
+    border-top: 20px solid white;
+    border-bottom: 20px solid transparent;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    float: right;
+    position: relative;
+    right: 5px;
+}
+.box_student{
+    margin-top: 20px;
+    padding: 10px;
+    width: 200px;
+    height: auto;
+    background: white;
+    border-radius: 10px;
+    float: right;
+    position: relative;
+    right: -40px;
+    top: -10px;
+}
+.outer_student{
+    margin: 20px;
+    display: block;
+    clear: left;
+}
+.avatar_student{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-image: url('../img/student.png');
+    float: right;
+    background-position: center;
+}
+.img{
+    display: block;
+}
+.character{
+    background: white;
+}
+/*div.outer_teacher:nth-child(n+1){*/
+    /*clear: left*/
+/*}*/
+.right{
+    position: relative;
+    float: right;
+    right: 10px;
+}
+/*div.outer_student:nth-child(n+5){*/
+    /*clear: right;*/
+/*}*/
