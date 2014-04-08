@@ -1,7 +1,7 @@
 *{
     padding: 0px;
     margin: 0px;
-    background: lightgray;
+    background: #EEEEEE;
 }
 .bubble_teacher{
     margin-top: 20px;
@@ -41,18 +41,21 @@
     background-position: center;
 }
 .footer{
+    padding: 10px;
+    background: #AAAAAA;
     position: fixed;
-    height: 40px;
+    height: 100px;
     width: 100%;
     bottom: 0px;
 }
 .choice{
+    margin: 10px;
     width: 280px;
     height: 30px;
     background: white;
     border-radius: 15px;
     padding: 0px 10px;
-    vertical-align: sub;
+    vertical-align: middle;
     float: left;
     position: relative;
     left: 10px;
@@ -63,7 +66,7 @@
     background: yellowgreen;
     border-radius: 15px;
     padding: 0px 10px;
-    vertical-align: sub;
+    vertical-align: middle;
     float: left;
     position: relative;
     left: 10px;
@@ -122,3 +125,9 @@
 /*div.outer_student:nth-child(n+5){*/
     /*clear: right;*/
 /*}*/
+.outer{
+    background: #EEEEEE;
+    width: auto;
+    height: 500px;
+    overflow-y: auto;
+}
