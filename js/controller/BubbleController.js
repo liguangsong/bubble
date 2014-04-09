@@ -1,8 +1,8 @@
 /**
  * Created by hyfy on 14-4-4.
  */
-function BubbleController($scope, $compile, $timeout) {
-//    console.log($scope)
+function BubbleController($rootScope, $scope, $compile, $timeout) {
+    console.log($scope)
     var questions = [
         {
             body: '提问: 1 + 1 = ?',
@@ -88,6 +88,9 @@ function BubbleController($scope, $compile, $timeout) {
             }, 1000);
             return;
         }
+        $timeout(function () {
+            give_question();
+        }, 1000);
     }
     $scope.give_video = function(){
         $scope.role = 'video';
