@@ -58,7 +58,7 @@ function BubbleController($scope, $compile, $timeout) {
                 'D:3'],
             type: 'choice'
         }
-    ]
+    ];
     var current_question = 0;
     var length = questions.length;
     var give_question = function () {
@@ -71,6 +71,14 @@ function BubbleController($scope, $compile, $timeout) {
         $scope.question.body = '题目做完啦';
     }
     $scope.submit = function (index) {
+        if(typeof index != 'number'){
+            $scope.role = 'student';
+            $scope.answer = index;
+            $timeout(function () {
+                $scope.give_video();
+            }, 1000);
+            return;
+        }
         $scope.role = 'student'
         $scope.answer = '我选第' + index + '个';
         if (parseInt($scope.question['choices'][index].substr(2)) == $scope.question.answer) {
@@ -80,6 +88,9 @@ function BubbleController($scope, $compile, $timeout) {
             }, 1000);
             return;
         }
+    }
+    $scope.give_video = function(){
+        $scope.role = 'video';
     }
     give_question();
 }

@@ -11,8 +11,18 @@
     <!--<div class="bubble_student"></div>-->
     <!--<div class="box_student">借问酒家何处有，牧童遥指杏花村</div>-->
 <!--</div>-->
-<div class="outer">
-    <div mathjax-bind="role"></div>
+<div class="container">
+    <div class="left-col">
+        <button class="btn btn-blue" ng-click="give_video()">视频</button>
+    </div>
+    <div class="contents">
+        <div class="outer">
+            <div bubble-chat="role"></div>
+        </div>
+    </div>
+    <div class="right-col">
+        <button class="btn btn-blue" ng-click="give_video()">视频</button>
+    </div>
 </div>
 <div class="footer">
     <div ng-shaow="choice">
@@ -20,6 +30,7 @@
             <div ng-repeat="choice in question.choices" class="choice" ng-click="submit($index)">{{choice}}</div>
         </div>
     </div>
+    <div class="choice" ng-click="submit('我不会')">{{'我不会'}}</div>
     <div ng-show="!choice">
         <div class="left"></div>
         <div class="right"></div>

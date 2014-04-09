@@ -41,17 +41,19 @@
     background-position: center;
 }
 .footer{
-    padding: 10px;
+    padding: 0px 10px;
     background: #AAAAAA;
     position: fixed;
     height: 100px;
     width: 100%;
     bottom: 0px;
+    vertical-align: middle;
 }
 .choice{
-    margin: 10px;
+    margin: 10px 10px 0px 10px;
     width: 280px;
     height: 30px;
+    line-height: 30px;
     background: white;
     border-radius: 15px;
     padding: 0px 10px;
@@ -114,15 +116,17 @@
 .character{
     background: white;
 }
-/*div.outer_teacher:nth-child(n+1){*/
-    /*clear: left*/
-/*}*/
+div.outer_teacher:nth-child(n+1){
+    clear: left;
+    position: relative;
+    margin-top: 20px;
+}
 .right{
     position: relative;
     float: right;
     right: 10px;
 }
-/*div.outer_student:nth-child(n+5){*/
+/*div.outer_student:nth-child(n+1){*/
     /*clear: right;*/
 /*}*/
 .outer{
@@ -130,4 +134,27 @@
     width: auto;
     height: 500px;
     overflow-y: auto;
+}
+.container{
+    display: -webkit-box;
+}
+.left-col{
+    width: 10%;
+    height: 500px;
+    padding: 26px;
+    /*background-color: orange;*/
+}
+.contents{
+    width: 80%;
+    height: 100%;
+}
+.right-col{
+    width: 10%;
+    height: 500px;
+    padding: 26px;
+    /*background-color: orange;*/
+}
+.video{
+    width: 200px;
+    height: 200px;
 }
